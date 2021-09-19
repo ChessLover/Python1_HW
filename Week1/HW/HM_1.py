@@ -17,6 +17,10 @@ else:
   
 print("------------------------------------")
 
+# Need to have in the following way:
+
+# ("eggs" in ingredients) or ("margarine" in ingredients)
+
 if "eggs" or "margarine" in ingredients:
     print("List contains either eggs or margarine.")
 else: 

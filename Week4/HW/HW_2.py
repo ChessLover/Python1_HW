@@ -12,8 +12,7 @@ print("---------------------------------------")
 
 market["fruits"] = sorted(market["fruits"])
 
-
 # This part is not complete
-#market = market.fromkeys(market["fruits"])
+market["fruits"] = list(market.fromkeys(market["fruits"]))
 
 print("Dict market after changes: ", market)

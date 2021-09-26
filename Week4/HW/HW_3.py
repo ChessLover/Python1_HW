@@ -7,3 +7,26 @@
 # 6) Create a list of tuples t4 with the following value: [(1,3,5), (8,9), (“Anna”, “Bob”,
 # “Alice”)]։ Print the second value of the first tuple in the list t4.
 
+t1 = (2, "cat", "a", -2, "Anna")
+print("t1 before changes: ", t1)
+
+t1 = list(t1)
+t1.remove("a")
+t1 = tuple(t1)
+
+print("t1 after changes: ", t1)
+
+t2 = (1,2,3,4,5)
+
+from itertools import chain
+
+t3 = (t1[:2], t2[-3:])
+t3 = tuple(list(chain.from_iterable(t3)))
+
+print("t3 tuple: ", t3)
+
+print("value of 2nd index from the tuple t3: ", t3[2])
+
+t4 = [(1,3,5), (8,9), ("Anna", "Bob", "Alice")]
+
+print("second value of the first tuple in the list t4: ", t4[0][1])

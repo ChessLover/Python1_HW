@@ -70,8 +70,6 @@ class ShapeCache:
     def get_shape(cid): 
         
         shape_cache = ShapeCache.cache.get(cid, None)
-        #creates an exact copy of COURSE, we copy so that the manipulations won't affect 
-        #the original cached object
         return shape_cache.clone() 
         
     
